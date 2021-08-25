@@ -2,7 +2,7 @@
  * @Author: GuanweiSu
  * @Date: 2021-08-24 23:05:06
 <<<<<<< HEAD
- * @LastEditTime: 2021-08-25 22:16:08
+ * @LastEditTime: 2021-08-25 22:22:26
 =======
  * @LastEditTime: 2021-08-25 22:11:09
 >>>>>>> master
@@ -44,10 +44,7 @@ int main(){
         std::cout<<GivenArray[i]<<" ";
     }
     std::cout << std::endl;
-<<<<<<< HEAD
     std::cout<< "[Done] exited with code in "<<(float)CT.GetTimeDiffInSecond()<<" seconds."<<std::endl;
-=======
-    std::cout<< "[Done] exited with code in "<<CT.GetTimeDiffInSecond()<<" seconds."<<std::endl;
->>>>>>> master
+
     return 0;
 }
