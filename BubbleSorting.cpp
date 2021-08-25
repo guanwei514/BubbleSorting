@@ -1,7 +1,7 @@
 /*
  * @Author: GuanweiSu
  * @Date: 2021-08-24 23:05:06
- * @LastEditTime: 2021-08-25 21:22:17
+ * @LastEditTime: 2021-08-25 22:11:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /BubbleSorting/BubbleSorting.cpp
@@ -40,6 +40,6 @@ int main(){
         std::cout<<GivenArray[i]<<" ";
     }
     std::cout << std::endl;
-    std::cout<< "[Done] exited with code in "<<CT.GetTimeDiffInSecond()<<" seconds"<<std::endl;
+    std::cout<< "[Done] exited with code in "<<CT.GetTimeDiffInSecond()<<" seconds."<<std::endl;
     return 0;
 }
