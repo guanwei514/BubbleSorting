@@ -1,11 +1,7 @@
 /*
  * @Author: GuanweiSu
  * @Date: 2021-08-24 23:05:06
-<<<<<<< HEAD
- * @LastEditTime: 2021-08-26 23:23:03
-=======
- * @LastEditTime: 2021-08-25 22:11:09
->>>>>>> master
+ * @LastEditTime: 2021-08-26 23:51:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /BubbleSorting/BubbleSorting.cpp
@@ -18,7 +14,15 @@ void swap(int* a, int* b){
     *a = *b;
     *b = temp;
 }
-
+void BubbleSort(int* array, int size){
+    for(int p = 1; p< size ; p++){
+        for(int s= 0; s<size-p ; s++){
+            if(array[s] > array[s+1]){
+            swap(&array[s],&array[s+1]);
+            }
+        } 
+    }
+}
 int main(){
     ComputingTime CT;
     //Do Code Here.
@@ -31,14 +35,7 @@ int main(){
         std::cin >> GivenArray[k];
     }
     CT.SetStartTime();      //Record the Start Time
-    for(int p = 1; p< maxsize ; p++){
-        for(int s= 0; s<maxsize-p ; s++){
-            if(GivenArray[s] > GivenArray[s+1]){
-            swap(&GivenArray[s],&GivenArray[s+1]);
-        }
-    }
-    }
-
+    BubbleSort(GivenArray,maxsize);
     CT.SetEndTime();    //Record the End Time
     for(int i = 0; i <maxsize ; i++){
         std::cout<<GivenArray[i]<<" ";
