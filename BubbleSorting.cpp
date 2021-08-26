@@ -2,7 +2,7 @@
  * @Author: GuanweiSu
  * @Date: 2021-08-24 23:05:06
 <<<<<<< HEAD
- * @LastEditTime: 2021-08-25 22:22:26
+ * @LastEditTime: 2021-08-26 23:23:03
 =======
  * @LastEditTime: 2021-08-25 22:11:09
 >>>>>>> master
@@ -13,10 +13,10 @@
 
 #include "BubbleSorting.h"
 
-void swap(int& a, int& b){
-    int temp = a;
-    a = b;
-    b = temp;
+void swap(int* a, int* b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 int main(){
@@ -34,7 +34,7 @@ int main(){
     for(int p = 1; p< maxsize ; p++){
         for(int s= 0; s<maxsize-p ; s++){
             if(GivenArray[s] > GivenArray[s+1]){
-            swap(GivenArray[s],GivenArray[s+1]);
+            swap(&GivenArray[s],&GivenArray[s+1]);
         }
     }
     }
